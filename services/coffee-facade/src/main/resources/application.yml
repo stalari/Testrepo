@@ -1,0 +1,6 @@
+server:
+  port: 8086
+
+coffee:
+  localBaseUrl: http://localhost:8087
+  remoteBaseUrl: http://localhost:8087

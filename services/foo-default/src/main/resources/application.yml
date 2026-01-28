@@ -1,0 +1,11 @@
+server:
+  port: 8083
+
+bar:
+  defaultBaseUrl: http://localhost:8081
+  acmeBaseUrl: http://localhost:8082
+
+# Mandatory wiring key mirroring legacy application.xml override:
+# org.sample.FooBean/bar -> ejb-link (BarBean | AcmeBarBean)
+wiring:
+  orgSampleFooBeanBar: ${WIRING_ORG_SAMPLE_FOOBEAN_BAR:}
